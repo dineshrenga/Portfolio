@@ -1,0 +1,29 @@
+
+.nav {
+    display: none; 
+}
+
+@media (min-width: 1024px) { 
+    .nav {
+        display: flex; 
+    }
+}
+
+.nav > * {
+    margin-right: 1.5rem; 
+}
+
+.nav > *:last-child {
+    margin-right: 0;
+}
+
+
+.den {
+    display: none; /* Hide by default */
+  }
+  
+  @media (min-width: 768px) {
+    .den {
+      display: block; /* Show on screens 768px and above */
+    }
+  }
