@@ -7,6 +7,10 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="./output.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <style>
@@ -38,7 +42,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            pointer-events: none; /* Allows clicks to pass through the overlay */
+            pointer-events: none; 
         }
         .rotate-45 {
             transform: rotate(5deg);
@@ -51,7 +55,7 @@
 
     <!-- section 1 -->
 
-    <header class="bg-white shadow-md mx-4 md:mx-12 rounded-lg mt-6 bg-[#ffff] overflow-hidden">
+    <header class="bg-white shadow-md mx-4 md:mx-12 rounded-lg mt-6 bg-[#ffff] overflow-hidden 2xl:w-[90%] 2xl:mx-auto 3xl:w-[70%]">
         <div class="container mx-auto py-4 flex justify-between items-center">
             
             <a href="#" class="font-bold text-xl text-gray-800 ml-5">
@@ -313,7 +317,7 @@
     
    
 
-    <div class="grid md:grid-cols-2">
+    <div class="grid md:grid-cols-2 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
         <!-- Left Column -->
         <div class="mt-6 mx-4 md:mx-12">
             <div class="px-4">
@@ -378,24 +382,24 @@
 
     <!-- section 2 Start-->
 
-    <div class="bg-gray-100 mx-4 md:mx-12 items-center md:mt-5">
-        <p id="Services" class="text-[30px] font-bold mt-5">Services</p>
+    <div class="bg-gray-100 mx-4 md:mx-12 items-center md:mt-5 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
+        <p id="Services" class="text-[30px] font-bold 2xl:ml-12 mt-5">Services</p>
         <div class="flex">
             <div class="bg-white  py-8 w-full  md:flex gap-8">
 
-                <div class="w-full md:hidden">
+                <div class="w-full md:hidden"> 
                     <ul class="space-y-2 text-lg font-semibold mb-10">
-                        <li><button onclick="showContents('ios', this)" class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">24/7 Customer Support & Service</button></li>
-                        <li><button onclick="showContents('mobile', this)" class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">HR Resources and Recruiting</button></li>
-                        <li><button onclick="showContents('web', this)" class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">Quality Assurance Testing</button></li>
-                        <li><button onclick="showContents('uiux', this)" class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">UI/UX Design</button></li>
-                        <li><button onclick="showContents('testing', this)" class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">Web Application Development</button></li>
-                        <li><button onclick="showContents('launch', this)" class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">AML/KYC Compliance</button></li>
+                        <li><button onclick="showContents('ios', this)" class="hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor  focus:outline-none active-link">24/7 Customer Support & Service</button></li>
+                        <li><button onclick="showContents('mobile', this)" class="hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor focus:outline-none">HR Resources and Recruiting</button></li>
+                        <li><button onclick="showContents('web', this)" class="hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor focus:outline-none">Quality Assurance Testing</button></li>
+                        <li><button onclick="showContents('uiux', this)" class="hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor focus:outline-none">UI/UX Design</button></li>
+                        <li><button onclick="showContents('testing', this)" class="hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor focus:outline-none">Web Application Development</button></li>
+                        <li><button onclick="showContents('launch', this)" class="hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor focus:outline-none">AML/KYC Compliance</button></li>
                     </ul>
                 </div>
 
                 <!-- Left Column -->
-                <div class="md:w-3/4">
+                <div class="md:w-3/4 2xl:ml-12">
 
                     <!-- iOS Content (default content) -->
                     <div id="content-ios" class="content-section">
@@ -449,17 +453,17 @@
                 <!-- Right Column -->
                 <div class="den w-full md:w-1/2  lg:ml-[180px] xl:ml-[250px]">
                     <ul class="md:space-y-8 lg:space-y-7 xl:space-y-4 text-lg font-semibold">
-                        <li><button onclick="showContents('ios', this)" class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">24/7 Customer Support & Service</button></li>
+                        <li><button onclick="showContents('ios', this)" class="hover:border-b-2 hover:border-b-primarycolor  hover:text-primarycolor focus:outline-none active-link">24/7 Customer Support & Service</button></li>
                         <li><button onclick="showContents('mobile', this)"
-                            class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none"> HR Resources and Recruiting</button></li>
-                        <li><button onclick="showContents('web', this)" class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">Quality Assurance Testing
+                            class="hover:border-b-2 hover:border-b-primarycolor  hover:text-primarycolor focus:outline-none"> HR Resources and Recruiting</button></li>
+                        <li><button onclick="showContents('web', this)" class="hover:border-b-2 hover:border-b-primarycolor  hover:text-primarycolor focus:outline-none">Quality Assurance Testing
                                 </button></li>
                         <li><button onclick="showContents('uiux', this)"
-                            class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">UI/UX design</button></li>
+                            class="hover:border-b-2 hover:border-b-primarycolor  hover:text-primarycolor focus:outline-none">UI/UX design</button></li>
                         <li><button onclick="showContents('testing', this)"
-                            class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">Web Application Development</button></li>
+                            class="hover:border-b-2 hover:border-b-primarycolor  hover:text-primarycolor focus:outline-none">Web Application Development</button></li>
                         <li><button onclick="showContents('launch', this)"
-                            class="hover:border-b-2 hover:border-b-primarycolor focus:outline-none">AML/KYC Complaince</button></li>
+                            class="hover:border-b-2 hover:border-b-primarycolor  hover:text-primarycolor focus:outline-none">AML/KYC Complaince</button></li>
                     </ul>
                 </div>
             </div>
@@ -472,13 +476,13 @@
 
     <!-- Section 3 start-->
 
-    <div id="Cases" class="mx-4 md:mx-12 my:5 md:my-10">
+    <div id="Cases" class="mx-4 md:mx-12 my:5 md:my-10 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
         <div class="den">
-            <p class="text-[22px] md:text-[30px] font-bold">
+            <p class="text-[22px] md:text-[30px] font-bold 2xl:ml-12">
                 Developed More Than <span class="text-primarycolor">40</span>
             </p>
 
-            <p class="text-[22px] md:text-[30px] font-bold">
+            <p class="text-[22px] md:text-[30px] font-bold 2xl:ml-12">
                 projects in <span class="text-primarycolor">15</span> industries
             </p>
         </div>
@@ -493,27 +497,28 @@
         <div class="mt-10">
             <div class="grid grid-cols-1 md:grid-cols-3">
                 <div class="mx-auto">
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/social.svg" alt="">Social media</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/fit.svg" alt="">Fitness and sport</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/bank.svg" alt="">E-commerce</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/construction.svg" alt="">Construction</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/ga.svg" alt="">Game projects</p>
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/social.svg" alt="">Social media</p>
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/fit.svg" alt="">Fitness and sport</p>
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/bank.svg" alt="">E-commerce</p>
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/construction.svg" alt="">Construction</p>
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/ga.svg" alt="">Game projects</p>
                 </div>
                 <div class="mx-auto">
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/ed.svg" alt="">Education</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/auto.svg" alt="">Auto, transport</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/medical.svg" alt="">Medicine, health</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/restaurant.svg" alt="">food
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/ed.svg" alt="">Education</p>
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/auto.svg" alt="">Auto, transport</p>
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/medical.svg" alt="">Medicine, health</p>
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/restaurant.svg" alt="">food
                         delivery</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/market.svg" alt="">Marketplaces</p>
+                    <p class="flex items-center py-2 " data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/market.svg" alt="">Marketplaces</p>
                 </div>
                 <div class="mx-auto">
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/ar.svg" alt="">Furnishing</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/tv.svg" alt="">Crypto Audits</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/startup.svg" alt="">Startups</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/religion.svg" alt="">Cyber Security</p>
-                    <p class="flex items-center py-2"><img class="pr-3" src="./Assets/online.svg" alt="">Online cources</p>
+                    <p class="flex items-center py-2" data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/ar.svg" alt="">Furnishing</p>
+                    <p class="flex items-center py-2" data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/tv.svg" alt="">Crypto Audits</p>
+                    <p class="flex items-center py-2" data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/startup.svg" alt="">Startups</p>
+                    <p class="flex items-center py-2" data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/religion.svg" alt="">Cyber Security</p>
+                    <p class="flex items-center py-2" data-animate="lightSpeedInLeft"><img class="pr-3" src="./Assets/online.svg" alt="">Online courses</p>
                 </div>
+
             </div>
 
         </div>
@@ -524,23 +529,23 @@
     <!-- section 4 start-->
 
     <div class="den mx-4 md:mx-12">
-        <div>
+        <div class="2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
             <p class="text-[30px] font-bold mb-4">Projects we are proud of</p>
             <p>Our software development company is truly proud of the wonderful clients we have </p>
             <p>worked with. We enjoy a long-term partnership</p>
         </div>
 
-        <nav class="flex my-10 space-x-4 p-4">
+        <nav class="flex my-10 space-x-4 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
             <button id="iteka-link" onclick="showContent('iteka', 'iteka-link')"
-                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor active-link">I-teka</button>
+                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor active-link">I-teka</button>
             <button id="dauletten-link" onclick="showContent('dauletten', 'dauletten-link')"
-                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor">Dauletten</button>
+                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor">Dauletten</button>
             <button id="guru-link" onclick="showContent('guru', 'guru-link')"
-                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor">Guru Bosch</button>
+                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor">Guru Bosch</button>
             <button id="santo-link" onclick="showContent('santo', 'santo-link')"
-                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor">Santo</button>
+                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor">Santo</button>
             <button id="homecreditbank-link" onclick="showContent('homecreditbank', 'homecreditbank-link')"
-                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor">Home Credit Bank</button>
+                class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor hover:text-primarycolor">Home Credit Bank</button>
             <!-- <button id="bipartners-link" onclick="showContent('bipartners', 'bipartners-link')"
                 class="text-gray-600 hover:border-b-2 hover:border-b-primarycolor">BI Partners</button>
             <button id="europharma-link" onclick="showContent('europharma', 'europharma-link')"
@@ -550,7 +555,7 @@
         </nav>
 
         <!-- I-teka Content (Default Visible) -->
-        <div id="iteka" class="content container mx-auto ">
+        <div id="iteka" class="content container mx-auto 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h1 class="text-3xl font-bold mb-4">I-teka</h1>
@@ -603,7 +608,7 @@
         </div>
 
         <!-- Dauletten Content -->
-        <div id="dauletten" class="content container mx-auto  hidden">
+        <div id="dauletten" class="content container mx-auto  hidden 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h1 class="text-3xl font-bold mb-4">Dauletten</h1>
@@ -658,7 +663,7 @@
         </div>
 
         <!-- guru -->
-        <div id="guru" class="content container mx-auto hidden">
+        <div id="guru" class="content container mx-auto hidden 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h1 class="text-3xl font-bold mb-4">Guru Bosch</h1>
@@ -687,7 +692,7 @@
 
         <!-- santo -->
 
-        <div id="santo" class="content container mx-auto hidden">
+        <div id="santo" class="content container mx-auto hidden 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h1 class="text-3xl font-bold mb-4">Santo</h1>
@@ -716,7 +721,7 @@
 
         <!--homecreditbank  -->
 
-        <div id="homecreditbank" class="content container mx-auto hidden">
+        <div id="homecreditbank" class="content container mx-auto hidden 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div>
                     <h1 class="text-3xl font-bold mb-4">Home Credit Bank</h1>
@@ -746,7 +751,7 @@
 
 <!-- section 4 mobile -->
 
-    <div class="container p-8 md:hidden">
+    <div class="container p-8 md:hidden ">
         <!-- Content Sections -->
         <div id="appSection1" class="app-content container mx-auto ">
             <!-- I-teka Content -->
@@ -882,7 +887,7 @@
 
     <!-- section 5 Start -->
 
-    <section class="bg-primarycolor md:flex mt-10 h-auto md:h-[350px] ">
+    <section class="bg-primarycolor md:flex mt-10 h-auto md:h-[350px] 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
         
             <div class="px-10 pt-3 md:p-10  md:w-1/2 my-auto">
                 <p class="text-3xl font-bold text-[#fff]">Let's discuss</p>
@@ -925,7 +930,7 @@
 
     <!-- section 6 Start -->
 
-    <div class="bg-[#fff] py-5 ">
+    <div class="bg-[#fff] py-5 2xl:w-[100%] 2xl:mx-auto 3xl:w-[70%]">
         <div class="font-bold text-2xl md:text-3xl mx-4 md:mx-12 my-10">Application Development Stages</div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3">
 
@@ -985,21 +990,21 @@
 
             <!-- section 7 Start -->
 
-        <section class="bg-[#F2F4F7]mt-10 mb-10 md:py-10 lg:py-0">
+        <section class="bg-[#F2F4F7]mt-10 mb-10 md:py-10 lg:py-0 ">
             <div class="mx-4 md:mx-12 md:flex h-auto lg:h-[470px] xl:h-[570px] ">
                 <div class="md:w-1/2 my-auto">
                     <p class="text-3xl font-bold mb-4">Our team</p>
                     <p>Our team is a group of dedicated professionals with diverse skills and expertise, collaborating to deliver innovative solutions, ensure quality, and meet client needs effectively.</p>
                     <div class="flex my-7">
                         <span class="w-[200px] lg:text-3xl xl:text-5xl font-bold"> <span class="counter" x-data="countUp(0, 22)"><span x-text="value">0</span></span>
-                            <p class="font-thin text-base mt-3">team members</p>
+                            <p class="font-thin text-xs md:text-base md:mt-3">team members</p>
                         </span>
                         <span class="w-[200px] lg:text-3xl xl:text-5xl font-bold "><span class="counter" x-data="countUp(0, 40)">+<span x-text="value">0</span></span>
-                            <p class="font-thin text-base mt-3">projects</p>
+                            <p class="font-thin text-xs md:text-base md:mt-3">projects</p>
                         </span>
                         <span class="w-[200px] lg:text-3xl xl:text-5xl font-bold ">        <span class="counter" x-data="countUp(0, 2)"><span x-text="value">0</span>+years</span>
 
-                            <p class="font-thin text-base mt-3">in IT sphere</p>
+                            <p class="font-thin text-xs md:text-base md:mt-3">in IT sphere</p>
                         </span>
                     </div>
                     <p class="pr-3 pb-5">All the necessary specialists - from a design to a tester - are on our staff. We hire
@@ -1151,7 +1156,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                   
                   <!-- Contact Number -->
-                  <div class="flex flex-col items-center sm:items-start space-y-2 text-[#fff]">
+                  <div class="flex flex-col  sm:items-start space-y-2 text-[#fff]">
                     <div class="flex items-center space-x-2">
                       <span><img src="./Assets/ph.svg" alt=""></span>
                       <span>Contact nums</span>
@@ -1162,10 +1167,10 @@
                   </div>
                   
                   <!-- Email -->
-                  <div class="flex flex-col items-center sm:items-start space-y-2 text-[#fff]">
+                  <div class="flex flex-col md:items-center sm:items-start space-y-2 text-[#fff]">
                     <div class="flex items-center space-x-2">
                       <span><img src="./Assets/post.svg" alt=""></span>
-                      <span>Post</span>
+                      <span class="font-semibold">Post your mail</span>
                     </div>
                     <a href="mailto:info@callsharks.in">
                       <span class="text-xs md:text-lg font-semibold">info@callsharks.in</span>
@@ -1173,21 +1178,23 @@
                   </div>
                   
                   <!-- Address -->
-                  <div class="flex flex-col items-center sm:items-start space-y-2 text-[#fff]">
+                  <div class="flex flex-col  sm:items-start space-y-2 text-[#fff]">
                     <div class="flex items-center space-x-2">
                       <span><img src="./Assets/location.svg" alt=""></span>
-                      <span>Address</span>
+                      <span class="font-semibold">Address</span>
                     </div>
-                    <span class="text-xs md:text-lg font-semibold">2187 Agarita Way, Princeton, Texas 75407, US.</span>
-                    <span class="text-xs md:text-lg font-semibold">No 47/24, VN Doss Road, Annasalai, Chennai, Tamil Nadu - 600 002.</span>
+                    <span class="text-xs md:text-lg font-semibold">2187 Agarita Way,</span>
+                    <span class="text-xs md:text-lg font-semibold"> Princeton, Texas 75407, US.</span>
+                    <span class="text-xs md:text-lg font-semibold">No 47/24, VN Doss Road,Annasalai,</span>
+                    <span class="text-xs md:text-lg font-semibold">Chennai, Tamil Nadu - 600 002.</span>
                   </div>
                   
                   <!-- Leave a request -->
                   <a href="#leaveRequest">
-                    <div style="cursor: pointer;" class="flex flex-col items-center sm:items-start space-y-2 text-[#fff]">
+                    <div style="cursor: pointer;" class="flex flex-col md:items-center sm:items-start space-y-2 text-[#fff]">
                         <div class="flex items-center space-x-2">
                           <span><img src="./Assets/request.svg" alt=""></span>
-                          <span>Leave a request</span>
+                          <span class="font-semibold">Leave a request</span>
                         </div>
                         <span class="text-xs md:text-lg font-semibold text-center">Leave a request</span>
                       </div>
@@ -1196,7 +1203,7 @@
                 
                 <div class="flex text-center justify-center text-xs md:text-lg items-center mt-6 text-[#fff]">
                   <span><img src="./Assets/final.svg" alt=""></span>
-                  <span class="text-gray-400 ps-2 flex ">We work throughout Kazakhstan</span>
+                  <span class="text-gray-400 ps-2 flex font-semibold">We work throughout Kazakhstan</span>
                 </div>
               </div>
             </footer>

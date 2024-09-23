@@ -23,7 +23,7 @@ function showContent(project, linkId) {
     activeLink.classList.add('active-link');
 }
 
-// section 7
+// section 4
 
 function showContents(contentType, element) {
     // Hide all content sections
@@ -160,6 +160,21 @@ function showContents(contentType, element) {
 
 
 
+// animated style
+const animateOnScroll = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate__animated', `animate__${entry.target.dataset.animate}`);
+            observer.unobserve(entry.target);
+        }
+    });
+};
+const observer = new IntersectionObserver(animateOnScroll, {
+    threshold: 0.2 });
+const animatedElements = document.querySelectorAll('[data-animate]');
+        animatedElements.forEach(el => {
+    observer.observe(el);
+});
 
 
 
